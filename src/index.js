@@ -2,6 +2,7 @@ import "./style.css";
 import "@fontsource/jetbrains-mono";
 import nightSky from "./pictures/night.jpg";
 import sunnySky from "./pictures/sunny_clear.jpg";
+import spinner from "./pictures/spinner.gif";
 
 let useFahrenheit = false;
 
@@ -32,6 +33,7 @@ async function getDataFromInput(loc) {
 
 function useData(data) {
     console.log(data);
+    loading.src = "";
     displayDayData(data.currentConditions);
     setBackgroundOnTime(data.currentConditions);
 }
@@ -120,4 +122,8 @@ form.addEventListener("submit", async (event) => {
     useData(data);
 });
 
+let loading = document.createElement("img");
+loading.src = spinner;
+let container = document.querySelector("#container");
+container.appendChild(loading);
 navigator.geolocation.getCurrentPosition(locationSuccess, locationFail);
