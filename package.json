@@ -20,7 +20,8 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
-    "@catppuccin/palette": "^1.7.1"
+    "@catppuccin/palette": "^1.7.1",
+    "@fontsource/jetbrains-mono": "^5.2.8"
   },
   "description": ""
 }

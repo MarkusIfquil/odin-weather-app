@@ -1,0 +1,58 @@
+* {
+    font-family: "Jetbrains Mono";
+    font-size: 120%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    padding: 1em;
+}
+
+.card {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+#temperature {
+    font-size: 200%;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 2em;
+}
+
+input {
+    color: inherit;
+    border-color: inherit;
+    background: none;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 0.3em 0.5em;
+}
+button {
+    color: inherit;
+    border-color: inherit;
+    background: none;
+    border-radius: 1em;
+    border-style: solid;
+    padding: 0.3em 0.5em;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+input:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
